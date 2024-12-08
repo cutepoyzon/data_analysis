@@ -1,0 +1,47 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE or Editor settings
+.vscode/
+.idea/
+*.swp
+*~
+
+# Streamlit-specific ignores
+# Streamlit's temporary files
+.streamlit/
+.cache/
+# Common Streamlit config files (if they shouldn't be tracked)
+config.toml
+secrets.toml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.out
+*.err
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE or Editor settings
+.vscode/
