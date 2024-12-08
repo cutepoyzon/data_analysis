@@ -65,7 +65,7 @@ if os.path.exists(csv_file_path):
         unsafe_allow_html=True
     )
 
-    st.sidebar.header("Filter Options")
+    st.sidebar.header("Dataset Filter Options")
 
     # First select box in the sidebar: Filter by Passenger Class
     pclass = st.sidebar.selectbox("Select Passenger Class", options=["All"] + df['Pclass'].unique().tolist(), key='pclass_select')
@@ -108,12 +108,12 @@ if os.path.exists(csv_file_path):
 
         # Display the filtered dataframe in the main area
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.subheader("Filtered Dataset")
+        st.subheader("The Titanic Dataset")
         st.write(filtered_df)
     else:
         # If no columns are selected, display the entire DataFrame (default view)
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.subheader("Filtered Dataset")
+        st.subheader("The Titanic Dataset")
         st.write(df)
         st.warning("No columns selected. Displaying the entire dataset by default.")
 
